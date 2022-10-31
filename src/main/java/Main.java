@@ -10,12 +10,14 @@ public class Main {
 
         Randoms randoms = new Randoms(90, 100);
         Iterator<Integer> iterator = randoms.getIterator();
+        int result;
         while (iterator.hasNext()) {
-            if (iterator.next() == 100) {
+            result = iterator.next();
+            if (result == 100) {
                 System.out.println("Выпало число 100, давайте на этом закончим");
                 break;
             } else {
-                collection.add(iterator.next());
+                collection.add(result);
             }
         }
         System.out.println(Arrays.toString(collection.toArray()));

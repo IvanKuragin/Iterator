@@ -26,9 +26,7 @@ public class Randoms implements Iterable<Integer> {
 
         @Override
         public Integer next() {
-            int result = random.nextInt(max+1 - min) + min;
-            System.out.println(result);
-            return result;
+            return random.nextInt(max+1 - min) + min;
         }
     }
 }
