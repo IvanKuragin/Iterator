@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class Main {
@@ -9,7 +10,7 @@ public class Main {
         List<Integer> collection = new ArrayList<>();
 
         Randoms randoms = new Randoms(90, 100);
-        Iterator<Integer> iterator = randoms.getIterator();
+        Iterator<Integer> iterator = randoms.iterator();
         int result;
         while (iterator.hasNext()) {
             result = iterator.next();
